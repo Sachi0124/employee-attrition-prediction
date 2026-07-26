@@ -1,3 +1,4 @@
+Markdown
 # 💼 Employee Attrition Intelligence
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
@@ -52,7 +53,7 @@ EMPLOYEE-ATTRITION-PREDICTION/
 ⚙️ Installation & Usage
 1. Clone the Repository
 Bash
-git clone https://github.com/Sachi0124/employee-attrition-prediction.git
+git clone [https://github.com/Sachi0124/employee-attrition-prediction.git](https://github.com/Sachi0124/employee-attrition-prediction.git)
 cd employee-attrition-prediction
 2. Install Dependencies
 Ensure you have Python installed, then install the required libraries:
