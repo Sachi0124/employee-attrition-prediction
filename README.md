@@ -1,4 +1,3 @@
-Markdown
 # 💼 Employee Attrition Intelligence
 
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python)
@@ -50,41 +49,68 @@ EMPLOYEE-ATTRITION-PREDICTION/
 ├── model.pkl                    # Serialized Machine Learning model (e.g., Random Forest/Logistic Regression)
 ├── scaler.pkl                   # Serialized StandardScaler for data normalization
 └── README.md                    # Project documentation
-⚙️ Installation & Usage
-1. Clone the Repository
-Bash
+
+```
+
+---
+
+## ⚙️ Installation & Usage
+
+### 1. Clone the Repository
+
+```bash
 git clone [https://github.com/Sachi0124/employee-attrition-prediction.git](https://github.com/Sachi0124/employee-attrition-prediction.git)
 cd employee-attrition-prediction
-2. Install Dependencies
+
+```
+
+### 2. Install Dependencies
+
 Ensure you have Python installed, then install the required libraries:
 
-Bash
+```bash
 pip install streamlit pandas numpy scikit-learn
-3. Run the Application
+
+```
+
+### 3. Run the Application
+
 Launch the Streamlit server locally:
 
-Bash
+```bash
 streamlit run app.py
-The dashboard will automatically open in your default web browser at http://localhost:8501.
 
-🧠 Under the Hood
-The Machine Learning Pipeline
-Exploratory Data Analysis (EDA): Identified key drivers of attrition, such as OverTime, MonthlyIncome, and JobSatisfaction.
+```
 
-Preprocessing: Handled missing values, applied One-Hot Encoding to categorical variables, and standardized numerical features using StandardScaler.
+The dashboard will automatically open in your default web browser at `http://localhost:8501`.
 
-Model Training: Trained multiple classifiers (Logistic Regression, Random Forest, SVM) in Employee_Attrition_Prediction.ipynb to identify the best-performing algorithm.
+---
 
-Artifact Export: Saved the final tuned model as model.pkl and the scaler as scaler.pkl to prevent data leakage and ensure production consistency.
+## 🧠 Under the Hood
 
-The UI Baseline Logic
-Because the final model was trained on 35 distinct features, but the UI only requests 9 key inputs to remain user-friendly, app.py constructs a "baseline employee" profile in the background. It dynamically injects the user's UI inputs into this baseline, standardizes the entire array, and feeds it to the model for highly accurate, real-time probability scoring.
+### The Machine Learning Pipeline
 
-🚀 Future Enhancements
-Add a visual "Feature Importance" chart to show why the model made its decision.
+1. **Exploratory Data Analysis (EDA):** Identified key drivers of attrition, such as `OverTime`, `MonthlyIncome`, and `JobSatisfaction`.
+2. **Preprocessing:** Handled missing values, applied One-Hot Encoding to categorical variables, and standardized numerical features using `StandardScaler`.
+3. **Model Training:** Trained multiple classifiers (Logistic Regression, Random Forest, SVM) in `Employee_Attrition_Prediction.ipynb` to identify the best-performing algorithm.
+4. **Artifact Export:** Saved the final tuned model as `model.pkl` and the scaler as `scaler.pkl` to prevent data leakage and ensure production consistency.
 
-Implement a database (SQLite/PostgreSQL) to log historical predictions.
+### The UI Baseline Logic
 
-Add batch-prediction capabilities (upload a .csv of an entire department).
+Because the final model was trained on 35 distinct features, but the UI only requests 9 key inputs to remain user-friendly, `app.py` constructs a "baseline employee" profile in the background. It dynamically injects the user's UI inputs into this baseline, standardizes the entire array, and feeds it to the model for highly accurate, real-time probability scoring.
 
-Built by Sachith C — Feel free to connect or contribute!
+---
+
+## 🚀 Future Enhancements
+
+* Add a visual "Feature Importance" chart to show *why* the model made its decision.
+* Implement a database (SQLite/PostgreSQL) to log historical predictions.
+* Add batch-prediction capabilities (upload a `.csv` of an entire department).
+
+---
+
+*Built by [Sachith C](https://github.com/Sachi0124) — Feel free to connect or contribute!*
+
+```
+
+```
